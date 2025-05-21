@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone X",
+        "price": 699.99,
+        "inventory": 24,
+        "product_code": "SP-001",
+        "image": "/images/product-images/smartphone.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Laptop Pro",
+        "price": 1299.99,
+        "inventory": 12,
+        "product_code": "LT-002",
+        "image": "/images/product-images/laptop.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Wireless Headphones",
+        "price": 149.99,
+        "inventory": 36,
+        "product_code": "WH-003",
+        "image": "/images/product-images/headphones.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Smart Watch",
+        "price": 249.99,
+        "inventory": 18,
+        "product_code": "SW-004",
+        "image": "/images/product-images/smartwatch.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bluetooth Speaker",
+        "price": 89.99,
+        "inventory": 42,
+        "product_code": "BS-005",
+        "image": "/images/product-images/speaker.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Tablet Mini",
+        "price": 349.99,
+        "inventory": 15,
+        "product_code": "TM-006",
+        "image": "/images/product-images/tablet.jpg"
+    }
+]
