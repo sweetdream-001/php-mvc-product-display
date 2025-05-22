@@ -11,8 +11,6 @@
 /coverage/
 .phpunit.result.cache
 
-# Generated images
-/public/images/placeholders/default.jpg
 
 # Cached data
 /var/
