@@ -6,6 +6,8 @@ A clean, maintainable PHP MVC application that loads and displays product data f
 
 This application demonstrates best practices in PHP development following the Model-View-Controller architectural pattern. It loads product data from a JSON file and displays it in a responsive HTML table with filtering options.
 
+![Screenshot](/public/images/placeholders/demo.png)
+
 ## Features
 
 - MVC architecture with clear separation of concerns
