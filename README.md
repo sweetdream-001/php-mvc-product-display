@@ -28,18 +28,22 @@ This application demonstrates best practices in PHP development following the Mo
 ## Installation
 
 1. Clone the repository
+```
 git clone https://github.com/sweetdream-001/php-mvc-product-display.git
 cd php-mvc-product-display
-
+```
 2. Install dependencies
+```
 composer install
-
+```
 3. Configure environment
+```
 cp .env.example .env
-
+```
 4. Start development server
+```
 composer run-script serve
-
+```
 
 5. Access the application at `http://localhost:8000`
 
@@ -55,40 +59,45 @@ Use the filter form at the top of the page to filter products by:
 - Product Name
 - Product Code
 
-Testing
+## Testing
 This project includes a comprehensive test suite with unit, integration, and functional tests using PHPUnit.
 
-Test Structure
+### Test Structure
 
-tests/
-├── Unit/              # Tests for individual components
-│   ├── Models/        # Model tests
-│   ├── Services/      # Service layer tests
-│   └── Repositories/  # Data access tests
-├── Integration/       # Tests for component interactions
-└── Functional/        # End-to-end application tests
+    tests/
+    ├── Unit/                   # Tests for individual components
 
-Running Tests
+    │       ├── Models/         # Model tests
+
+    │       ├── Services/       # Service layer tests
+ 
+    │       └── Repositories/   # Data access tests
+
+    ├── Integration/            # Tests for component interactions
+
+    └── Functional/             # End-to-end application tests
+
+### Running Tests
 Run all tests:
-
+```
 ./vendor/bin/phpunit
-
-Run a specific test suite:
-
+```
+### Run a specific test suite:
+```
 ./vendor/bin/phpunit --testsuite unit
-
-Run a specific test file:
-
+```
+### Run a specific test file:
+```
 ./vendor/bin/phpunit tests/Unit/Models/ProductTest.php
-
-Code Coverage
+```
+### Code Coverage
 To generate a code coverage report, ensure Xdebug is installed and properly configured, then run:
-
+```
 ./vendor/bin/phpunit --coverage-html coverage
-
+```
 Open coverage/index.html in your browser to view the detailed coverage report.
 
-Adding New Tests
+### Adding New Tests
 1. Create a new test class in the appropriate directory
 
 2. Extend PHPUnit\Framework\TestCase
@@ -97,7 +106,7 @@ Adding New Tests
 
 4. Run PHPUnit to execute your new tests
 
-Test Requirements
+### Test Requirements
 - PHPUnit 9.x
 
 - Xdebug for code coverage (optional)
@@ -107,12 +116,12 @@ Test Requirements
 Development
 Coding Standards
 This project follows PSR-12 coding standards. To check compliance:
-
+```
 composer run-script check-style
+```
 
-
-Adding New Features
-Adding New Filter Criteria
+## Adding New Features
+### Adding New Filter Criteria
 
 - Update the ProductRepository::getFilterOptions() method to include new filter options
 
@@ -120,31 +129,29 @@ Adding New Filter Criteria
 
 - Ensure your Product model has a corresponding getter method
 
-Adding New Product Fields
+### Adding New Product Fields
 Update the Product model in app/Models/Product.php to include new properties and getters
 
 - Update the view in app/Views/products/index.php to display the new fields
 
 - Update the JSON data structure if necessary
 
-Security Considerations
+### Security Considerations
 - All output in views is properly escaped with htmlspecialchars()
 
 - Input validation is performed before processing
 
 - File paths are validated to prevent directory traversal
 
-Performance Optimization
+### Performance Optimization
 - JSON data is loaded only when needed
 
 - Filtering is performed in-memory for rapid response
 
 - Static assets are minimized and cached
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contributing
+### Contributing
 - Fork the repository
 
 - Create your feature branch (git checkout -b feature/amazing-feature)
